@@ -30,7 +30,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
-        <Stack.Screen name="index" options={{title: 'Splash'}} />
+        <Stack.Screen name="index" options={{title: 'Splash', headerShown: false}} />
         <Stack.Screen name="register" options={{title: 'Login'}} />
         <Stack.Screen name="modal" options={{presentation: 'modal'}} />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
